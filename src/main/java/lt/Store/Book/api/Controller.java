@@ -1,13 +1,14 @@
-package lt.Store.Book.Api;
+package lt.Store.Book.api;
 
-import lt.Store.Book.dto.DtoBook;
+import lt.Store.Book.dto.BookDto;
 import org.springframework.http.ResponseEntity;
 
 import java.util.Map;
 
-public interface RestApi {
+public interface Controller {
 
-    ResponseEntity<Map<Object,Object>> addOrEditBooks(DtoBook book);
+    ResponseEntity<Map<Object,Object>> editBooks(BookDto book);
+    ResponseEntity<Map<Object,Object>> addBooks(BookDto book);
     ResponseEntity<Map<Object,Object>> getBookByBarcode(Long barcode);
     ResponseEntity<Map<Object,Object>> calculateTotalPriceBooksByBarcode(Long barcode);
 

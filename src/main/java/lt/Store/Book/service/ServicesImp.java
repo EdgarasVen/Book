@@ -1,19 +1,22 @@
 package lt.Store.Book.service;
 
-import lt.Store.Book.dto.DtoBook;
+import lt.Store.Book.dto.BookDto;
+import lt.Store.Book.model.Book;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+@Service
 public class ServicesImp implements Services{
 
 
     @Override
-    public DtoBook getBookByBarcode(Long barcode) {
+    public BookDto getBookByBarcode(Long barcode) {
         return null;
     }
 
     @Override
-    public boolean addBook(DtoBook dtoBook) {
+    public boolean addBook(BookDto bookDto) {
         return false;
     }
 
